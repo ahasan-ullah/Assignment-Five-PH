@@ -39,14 +39,14 @@
       </div>
     </nav>
     <div class="w-[90%] mt-8 lg:mt-20 mx-auto flex justify-center space-x-4 lg:space-x-8 pb-8">
-      <button class="btn btn-bg">Donation</button>
-      <button class="btn">History</button>
+      <button id="donation-btn" class="btn btn-bg">Donation</button>
+      <button id="history-btn" class="btn">History</button>
     </div>
   </header>
 
   <main class="w-[90%] mx-auto">
     <!-- donation section -->
-    <div class="space-y-5">
+    <div id="donation-section" class="space-y-5">
       <!-- noakhali -->
       <div class="border lg:flex p-4 lg:p-8 rounded-xl space-y-10 lg:space-y-0 lg:gap-8">
         <div class="lg:w-1/2">
@@ -102,9 +102,34 @@
         </div>
       </div>
     </div>
+    <!-- history section -->
+    <div id="history-section" class="p-4 lg:p-8 mt-8 border rounded-xl space-y-4 hidden">
+      <h3 class="font-bold text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+      <p class="text-base text-[#111111B3]">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+    </div>
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box space-y-5">
+        <h3 class="text-4xl font-bold text-center">Congrates!</h3>
+        <div class="flex justify-center"><img src="assets/coin.png" alt=""></div>
+        <p class="text-center">You have donated for humankind</p>
+        <h3 class="text-2xl font-bold text-center">Successfully</h3>
+        <div class="modal-action flex justify-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close Information</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   </main>
 
   <!-- footer -->
   <footer class="bg-[#F9F7F3] h-16 lg:h-24 mt-14"></footer>
+
+  <!-- script -->
+  <script src="./script/app.js"></script>
 </body>
 </html>
