@@ -62,7 +62,6 @@ function changeAmount(textfield,donationTaka){
   totalAmount-=parseFloat(document.getElementById(textfield).value);
   totalTakaEl.innerText=totalAmount;
 
-  document.getElementById(textfield).value='';
 
   let txt='';
   if(textfield==='noakhali-text-field'){
@@ -82,6 +81,8 @@ function changeAmount(textfield,donationTaka){
         <h3 class="font-bold text-lg">${parseFloat(document.getElementById(textfield).value)} Taka is Donated for ${txt}, Bangladesh</h3>
         <p class="text-base text-[#111111B3]">Date : ${currentDate}</p>
       </div>`;
+
+      document.getElementById(textfield).value='';
 
       document.getElementById('my_modal_5').showModal();
 };
