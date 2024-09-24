@@ -32,7 +32,7 @@ document.getElementById('protest-donate-btn').addEventListener('click',function(
 });
 
 blogBtn.addEventListener('click',function(){
-  window.location.href='../blog.html';
+  window.location.href='./blog.html';
 });
 
 // common function
