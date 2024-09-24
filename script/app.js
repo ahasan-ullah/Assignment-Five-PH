@@ -2,6 +2,7 @@ const donationSection=document.getElementById('donation-section');
 const historySection=document.getElementById('history-section');
 const totalTakaEl=document.getElementById('total-taka');
 let totalAmount=parseFloat(totalTakaEl.innerText);
+const blogBtn=document.getElementById('blog-btn');
 
 document.getElementById('donation-btn').addEventListener('click',function(){
   showSectionByID('donation-section');
@@ -28,6 +29,10 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(){
 
 document.getElementById('protest-donate-btn').addEventListener('click',function(){
   changeAmount('protest-text-field','protest-taka');
+});
+
+blogBtn.addEventListener('click',function(){
+  window.location.href='../blog.html';
 });
 
 // common function

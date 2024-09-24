@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
+  <style>
+    .font-lexend{
+      font-family: "Lexend", sans-serif;
+    }
+    .btn-bg{
+      background-color: #B4F461;
+    }
+  </style>
+</head>
+<body class="font-lexend">
+  <header class="sticky top-0 backdrop-blur-lg border-b mb-4">
+    <nav class="bg-[#F9F7F3] p-5 lg:pb-8">
+      <div class="navbar lg:w-[90%] mx-auto flex justify-between">
+        <!-- left -->
+        <a id="home-btn" class="btn btn-sm lg:btn-md bg-[#B4F461] lg:text-xl">Home</a>
+        <!-- middle -->
+        <div class="space-x-2 lg:space-x-4">
+          <img src="assets/logo.png" alt="" class="h-6 w-6 lg:h-8 lg:w-8">
+          <h3 class="text-sm lg:text-xl">Donate Bangladesh</h3>
+        </div>
+        <!-- right -->
+        <div class="space-x-1 lg:space-x-2">
+          <img src="assets/coin.png" alt="" >
+          <p class="text-xs lg:text-xl"><span id="total-taka">5500</span> BDT</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="w-[90%] mx-auto mt-5">
+    <h1 class="text-2xl lg:text-4xl font-extrabold">Important FAQ <i class="fa-regular fa-comment text-3xl lg:text-5xl"></i></h1>
+    <div class="mt-5 space-y-5">
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-base lg:text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for representing HTML, XML, and other structured documents as a tree of nodes.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-base lg:text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>We can select an element from the DOM by using classname, id, tagname, queryselector, queryselectorall.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-base lg:text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a technique in JavaScript where you attach an event listener to a parent element instead of directly to each child element. When an event occurs on any of the child elements, the event bubbles up to the parent element, triggering the attached event listener.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-base lg:text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) provides methods and properties to modify an element's attributes and styles like attributes styles.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-[#F9F7F3] h-16 lg:h-24 mt-14"></footer>
+
+  <!-- script -->
+  <script src="./script/blog.js"></script>
+</body>
+</html>
