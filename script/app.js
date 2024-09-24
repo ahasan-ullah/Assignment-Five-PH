@@ -51,6 +51,7 @@ function changeBtnBackGround(id1,id2){
 
 function changeAmount(textfield,donationTaka){
   if(isNaN(parseFloat(document.getElementById(textfield).value)) || parseFloat(document.getElementById(textfield).value)<=0){
+    document.getElementById(textfield).value='';
     return alert('Invalid Donation Amount');
   }
   // updating section data
@@ -60,6 +61,8 @@ function changeAmount(textfield,donationTaka){
   // updating total taka
   totalAmount-=parseFloat(document.getElementById(textfield).value);
   totalTakaEl.innerText=totalAmount;
+
+  document.getElementById(textfield).value='';
 
   let txt='';
   if(textfield==='noakhali-text-field'){
