@@ -50,7 +50,7 @@ function changeBtnBackGround(id1,id2){
 };
 
 function changeAmount(textfield,donationTaka){
-  if(isNaN(parseFloat(document.getElementById(textfield).value)) || parseFloat(document.getElementById(textfield).value)<=0){
+  if(isNaN(document.getElementById(textfield).value) || parseFloat(document.getElementById(textfield).value)<=0){
     document.getElementById(textfield).value='';
     return alert('Invalid Donation Amount');
   }
